@@ -8,13 +8,10 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           Brian Becker
-          <p>about myself</p>
-          <p>my reason for attending Helio</p>
-          <p>list your interest</p>
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
+          <footer>
             Edit <code>src/App.js</code> and save to reload.
-          </p>
+          </footer>
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -24,6 +21,38 @@ class App extends Component {
             Learn React
           </a>
         </header>
+
+        <main>
+          <div className="row">
+            <div className="column">
+              <div class="column-red">
+                <button>about myself</button>
+                <p />
+                <p>I enjoy playing games</p>
+                <p>I enjoy learning new things</p>
+                <p>I enjoy sharing my knowledge</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-white">
+                <button>My reason for attending Helio</button>
+                <p />
+                <p>I was convinced by someone it would be easy</p>
+                <p>More money doesn't hurt</p>
+                <p>I needed a challenge</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-blue">
+                <button>My Interests</button>
+                <p />
+                <p>spending time with my family</p>
+                <p>Playing games</p>
+                <p>Getting back in shape</p>
+              </div>
+            </div>
+          </div>
+        </main>
       </div>
     );
   }
